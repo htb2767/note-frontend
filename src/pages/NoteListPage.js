@@ -7,7 +7,7 @@ const NoteListPage = () => {
         getNotes()
     },[])
     let getNotes = async()=>{
-        let response=await fetch('/api/notes/')
+        let response=await fetch('https://noteapp-ts8w.onrender.com/api/notes/')
         let data=await response.json()
         console.log(data)
         setNotes(data)
